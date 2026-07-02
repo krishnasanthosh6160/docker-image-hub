@@ -25,7 +25,7 @@ pipeline {
                 script {
                     echo "Building Docker image..."
                     sh "docker build -t ${DOCKERHUB_REPO}:${IMAGE_TAG} ."
-                    sh "docker tag ${DOCKERHUB_REPO}:${IMAGE_TAG} ${DOCKERHUB_REPO}:latest"
+                    //sh "docker tag ${DOCKERHUB_REPO}:${IMAGE_TAG} ${DOCKERHUB_REPO}:latest"
                 }
             }
         }
@@ -44,7 +44,7 @@ pipeline {
                 script {
                     echo "Pushing image to Docker Hub..."
                     sh "docker push ${DOCKERHUB_REPO}:${IMAGE_TAG}"
-                    sh "docker push ${DOCKERHUB_REPO}:latest"
+                   // sh "docker push ${DOCKERHUB_REPO}:latest"
                 }
             }
         }
