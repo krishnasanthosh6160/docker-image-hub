@@ -6,7 +6,7 @@ pipeline {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
         
         // Change this to your Docker Hub username
-        DOCKERHUB_REPO = "santhoshkrishna6160/nginx"
+        DOCKERHUB_REPO = "santhoshkrishna6160"
         
         // Image tag (using Jenkins build number)
         IMAGE_TAG = "${BUILD_NUMBER}"
