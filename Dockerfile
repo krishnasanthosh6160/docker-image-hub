@@ -1,5 +1,3 @@
-Dockerfile:
-==========
 FROM eclipse-temurin:17-jre-alpine
 RUN mkdir -p /app/source
 COPY . /app/source
